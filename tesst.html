@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÀI THỰC HÀNH</title>
+</head>
+<body>
+    <H1>Decision Making</H1>
+    <!-- Bài thực hành số 1 -->
+    <script>
+        let age=18;
+        if (age>=18) {
+            console.log("Trên 18 tuổi");
+        }else{
+             console.log("Dưới 18 tuổi");
+        }
+    </script>
+    <!-- Bài thực hành số 2 -->
+    <script>
+        let hour=parseInt(prompt('Nhập số giờ trong ngày(0-23):'));
+        
+        if (hour<18) {
+            console.log("Good day");
+        }else{
+            console.log("Good evening");
+        }
+    </script>
+    <!-- Bài thực hành số 3 -->
+    <script>
+        let hour1=parseInt(prompt('Nhập số giờ trong ngày1(0-23):'))
+       
+        
+        if (hour1<10 && hour1>0) {
+            console.log('Good morning');
+        }else if(hour1<20){
+            console.log('Good day');
+
+        }else{
+            console.log('Good evening');
+        }
+        </script>
+        
+    <!-- Bài thực hành số 4 -->
+    <script>
+        let number;
+        number = prompt(' Enrer the number');
+        if (number%2==0) {
+            console.log('Số chẵn');
+        }else{
+            console.log('Số lẻ');
+        }
+        
+    </script>
+    <!-- Bài thực hành số 5 -->
+    <script>
+        let number1;
+        number1 = prompt('Enter the number1');
+        switch (number1%2) {
+            case 0:
+                console.log('Số chẵn1');
+                break;
+             case 1:
+                console.log('Số lẻ1');
+                break; 
+        
+            default:
+                
+                break;
+        }
+    </script> 
+    <!-- Bài thực hành số 6 -->
+    <script>
+        let inputColor=prompt('Nhập màu vào đây:').toLowerCase();
+        switch (inputColor) {
+            case "xanh":
+            case "đỏ":
+            case" vàng":
+                console.log('Màu người dùng nhập');
+                break;
+        
+            default:
+                console.log('Không hợp lệ. Vui lòng nhập lại' );
+                break;
+        }
+    </script>
+   <!-- Bài thực hành số 7-->
+   <script>
+    let x= parseInt(prompt('Nhập số nguyên x:'));
+    
+    if (x==0) {
+        console.log('x có giá trị là 0');
+    } else if(x>0){
+        console.log('x là số nguyên dương');
+    }else{
+        console.log('x là số nguyên âm');
+    }
+
+   </script>
+   <!-- Bài thực hành số 8 -->
+   <script>
+    let inputweight=parseFloat(prompt('Nhập cân nặng của bạn(kg):'));
+    let inputheight=parseFloat(prompt('Nhập chiều cao của bạn(m):'));
+    let BMI = inputweight/(inputheight**2);
+    if (BMI<18.5) {
+        console.log('Cân nặng thấp(gầy)');
+    } else if(BMI>=18.5 && BMI<=24.9) {
+        console.log('Bình thường');
+    
+    }  else  if(BMI>25 && BMI<=29.9){
+        console.log('Tiền béo phì');
+    } else if(BMI>=30 && BMI<=35.9){
+        console.log('Béo phì độ I');
+    } else if(BMI>=35 && BMI<=39.9){
+        console.log('Béo phì độ II');
+    }else{
+        console.log('Béo phì độ III');
+    }
+
+
+   </script>
+   <!-- Bài thực hành 9 -->
+  <script>
+let subjects = ["Toán", "Lí", "Hóa", "Văn", "Sử", "Địa"];
+let totalScore = 0;
+for (let i = 0; i < subjects.length; i++) {
+    let score = parseFloat(prompt("Nhập điểm môn " + subjects[i] + " (thang điểm 10):")); 
+}
+let averageScore = totalScore / subjects.length;
+if (averageScore >= 8.0 && averageScore <= 10) {
+    console.log("Xếp loại: GIỎI");
+} else if (averageScore >= 6.5 && averageScore <= 7.9) {
+    console.log("Xếp loại: KHÁ");
+} else if (averageScore >= 5.0 && averageScore <= 6.4) {
+    console.log("Xếp loại: TRUNG BÌNH");
+} else {
+    console.log("Xếp loại: YẾU");
+}
+
+  </script>
+  <!-- Bài thực hành 10 -->
+  <script>
+    let month=parseInt(prompt('Nhập số tháng trong năm(1-12):'));
+   switch (month) {
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+
+        console.log('Tháng' + month + 'có 31 ngày.');
+        break;
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+        console.log('Tháng' + month) +'có 30 ngày.';
+        break;
+    case 2:
+        console.log('tháng 2 có 28 hoặc 29 ngày.');
+    default:
+        console.log('Không hợp lệ. Vui lòng nhập lại từ 1-12');
+        break;
+   }
+  </script>
+</body>
+</html>xanh

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        1.câu điều kiện if-else(nếu-thì)
+        +nếu điều kiện thỏa mãn thì phần if được thực thi.
+        +nếu điều kiện không thỏa mãn thì phần else được thực thi
+        + cú pháp
+        if(điều kiện){
+            //phần thực thi
+        } else{
+            //phần thực thi
+        }
+        2. câu điều kiện if-else if-else lồng: trong if lại có if-else
+        3.if-else bậc thang  thực thi tại điều kiện thỏa mãn
+         if(điều kiện){
+            //phần thực thi
+         }else if(điều kiện){
+            //thực thi
+         }else if(điêuf kiện){
+            //thực thi
+         }
+     -->
+     <script>
+        /* 
+        falsy và truthy
+        +falsy bao gồm các giá trị sau:0,null,NaN,undefined,false,"",'' chạy else
+        + truthy không phải là falsy: chạy if
+        */
+        let age=18;
+        let name='minh thu';
+        
+        // console.log(`xin chào ${name} năm nay ${age} tuổi`)
+        
+        if(age=18){
+            console.log('bạn đủ 18 tuổi');
+        }else{
+           console.log('bạn không đủ 18 tuổi');
+        }
+        if(5){
+            console.log('5 thỏa mãn');
+        }else{
+            console.log('không thỏa mãn')
+        }
+        let a=15;
+        if(a>20){
+           console.log('1')
+        }else{
+            console.log('2')
+            if(a>5){
+                console.log('3')
+            }else{
+                if(a>18){
+                    console.log('4')
+                }else{
+                    console.log('6')
+                }
+            }
+        }
+        console.log('******************************')
+        
+        let number=15;
+        if(number>20){
+            console.log('hiệp1')
+        }else if(number%2!==0){
+            console.log('hiệp2')
+        }else if(number%4==0){
+            console.log('hiệp3')
+        }else{
+            console.log('không có thỏa mãn');
+        }
+     </script>
+</body>
+</html>
